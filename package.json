@@ -1,0 +1,34 @@
+{
+  "name": "kitty2iterm",
+  "version": "1.0.0",
+  "description": "Convert Kitty color schemes to iTerm and vice versa",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "start": "npm-run-all clean build",
+    "clean": "rimraf build && rimraf tsconfig.tsbuildinfo",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisnoi/kitty2iterm.git"
+  },
+  "author": "wisnoi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wisnoi/kitty2iterm/issues"
+  },
+  "homepage": "https://github.com/wisnoi/kitty2iterm#readme",
+  "devDependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^12.11.2",
+    "@types/plist": "^3.0.2",
+    "eslint": "^6.5.1",
+    "typescript": "^3.7.0-dev.20191021"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "plist": "^3.0.1",
+    "simpleloggerw": "^1.0.5"
+  }
+}
